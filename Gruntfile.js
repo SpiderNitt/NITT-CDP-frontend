@@ -21,14 +21,45 @@ var copy_tasks = {
 	}
 };
 
+var watch_tasks = {
+	scripts: {
+		files: ['src/**/*.js'],
+		tasks: ['concat', 'jshint:development'],
+		options: {
+			spawn: false,
+		}
+	},
+	pages: {
+		files: ['src/**/*.html'],
+		tasks: ['copy'],
+		options: {
+			spawn: false,
+		}
+	}
+};
+
+var jshint_tasks = {
+	production: {
+		src: ['public/js/*.js']
+	},
+	development: {
+		src: ['src/**/*.js']
+	}
+};
+
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		concat: concat_tasks,
-		copy: copy_tasks
+		copy: copy_tasks,
+		watch: watch_tasks,
+		jshint: jshint_tasks
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.registerTask('default', ['concat', 'copy']);
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+
+	grunt.registerTask('default', ['concat', 'copy', 'jshint']);
 };
