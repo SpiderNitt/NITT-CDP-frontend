@@ -1,0 +1,30 @@
+{
+  "name": "cdp-frontend",
+  "version": "0.0.1",
+  "description": "The frontend for the CDP project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiderNitt/NITT-CDP-frontend.git"
+  },
+  "keywords": [
+    "angularjs",
+    "frontend",
+    "cdp"
+  ],
+  "authors": [
+    "Rishi Rajasekaran <rajasekaran.rishi@gmail.com>"
+  ],
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/SpiderNitt/NITT-CDP-frontend/issues"
+  },
+  "homepage": "https://github.com/SpiderNitt/NITT-CDP-frontend#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1"
+  }
+}
