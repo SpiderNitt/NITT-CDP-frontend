@@ -1,0 +1,1 @@
+var cdpApp = angular.module('CDP', ['ngRoute', 'CDP.services', 'CDP.controllers']);

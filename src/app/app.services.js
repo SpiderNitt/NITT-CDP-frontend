@@ -1,0 +1,1 @@
+var cdpServices = angular.module('CDP.services', []);
