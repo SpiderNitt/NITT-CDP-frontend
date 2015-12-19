@@ -1,6 +1,8 @@
 cdpControllers.controller('homeController', [
 	'$scope', '$http',
 	function($scope, $http) {
-		console.log('Hello World!');
+		var message = "Hello World!";
+		$scope.greeting = message;
+		console.log(message);
 	}
 ]);
