@@ -1,2 +1,6 @@
 node_modules/
 npm-debug.log
+public/components/
+public/js/app.js
+public/js/controllers.js
+public/js/services.js
