@@ -1,0 +1,25 @@
+<header ng-include="'components/core/defaultHeader.html'"></header>
+<section class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<h1 class="text-center">Log In</h1>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" ng-model="user.username" placeholder="Username" />
+					<input type="text" class="form-control" ng-model="user.password" placeholder="Password" />
+				</div>
+				<div class="form-group">
+					<p>
+						<label for="remember">
+							<input id="remember" type="checkbox" ng-model="user.remember" />
+							Remember
+						</label>
+					</p>
+				</div>
+				<div class="form-group">
+					<button type="submit" ng-click="login(user)">Log In</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>

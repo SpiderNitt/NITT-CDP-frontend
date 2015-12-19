@@ -5,5 +5,9 @@ cdpApp.config(['$routeProvider',
 			templateUrl: 'components/home/homeView.html',
 			controller: 'homeController'
 		})
+		.when('/login', {
+			templateUrl: 'components/auth/loginView.html',
+			controller: 'loginController'
+		});
 	}
 ]);
